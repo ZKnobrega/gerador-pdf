@@ -1,0 +1,56 @@
+{
+  "name": "gerador-pdf",
+  "version": "1.0.0",
+  "description": "Gerador de Tutoriais e Manuais de Sistemas em PDF",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "server": "node server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "electron": "electron .",
+    "app": "vite build && electron ."
+  },
+  "keywords": [
+    "pdf",
+    "tutorial",
+    "manual",
+    "screenshot",
+    "generator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "compression": "^1.8.2",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "html2canvas": "^1.4.1",
+    "html2canvas-pro": "^2.5.2",
+    "jspdf": "^4.2.1",
+    "lucide-react": "^1.56.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tailwind-merge": "^3.7.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/compression": "^1.8.1",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/supertest": "^7.2.1",
+    "@vitejs/plugin-react": "^6.1.2",
+    "cross-env": "^10.1.0",
+    "electron": "^44.7.0",
+    "happy-dom": "^21.0.1",
+    "supertest": "^7.3.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.4"
+  }
+}

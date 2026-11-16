@@ -1,0 +1,17 @@
+services:
+  gerador-pdf:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gerador-pdf
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:${PORT:-8090}:80"
+    volumes:
+      - ./data/projects:/app/data/projects
+      - ./data/pdfs:/app/data/pdfs
+    environment:
+      - NODE_ENV=production
+      - DATA_DIR=/app/data/projects
+      - PDF_DIR=/app/data/pdfs
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}

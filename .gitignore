@@ -1,0 +1,20 @@
+# Dependencies and build output
+node_modules/
+dist/
+
+# Secrets and local settings (never commit real keys)
+.env
+
+# Local tutorial data and generated PDFs (kept on the machine that runs the app)
+data/projects/*.json
+data/pdfs/*
+!data/projects/.gitkeep
+!data/pdfs/.gitkeep
+
+# Test and runtime leftovers
+src/test/temp_*/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
